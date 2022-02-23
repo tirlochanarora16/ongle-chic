@@ -1,0 +1,23 @@
+.contact {
+  padding: 2rem;
+  position: absolute;
+  right: 5rem;
+
+  &__number {
+    font-size: 2rem;
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 8rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+  }
+}

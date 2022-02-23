@@ -1,0 +1,78 @@
+.header {
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/header/background.png");
+
+  &__box {
+    position: absolute;
+    padding: 1rem;
+    left: 5rem;
+    top: 2rem;
+
+    h1 {
+      font-family: var(--font-secondary);
+      font-size: 3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    &--video {
+      margin: 2rem 0;
+      padding: 1rem;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 6rem;
+      box-shadow: var(--box-shadow);
+      cursor: pointer;
+
+      p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.75rem;
+      }
+    }
+
+    &--elle {
+      display: block;
+      text-align: center;
+
+      padding: 1rem;
+      border-radius: 6rem;
+      box-shadow: var(--box-shadow);
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    position: absolute;
+    color: var(--color-primary);
+    top: 38%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    &--container {
+      position: relative;
+    }
+
+    h1 {
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      font-size: 8rem;
+      // letter-spacing: 1rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      position: absolute;
+      bottom: 0;
+      font-weight: 500;
+      right: 0;
+    }
+  }
+}
