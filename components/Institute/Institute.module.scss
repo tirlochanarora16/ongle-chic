@@ -1,0 +1,46 @@
+.institute {
+  height: 100vh;
+
+  background-image: url("../../images/institute/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &__content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 25rem;
+  }
+
+  &__image {
+    display: block;
+    text-align: center;
+    flex: 1;
+  }
+
+  &__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-box {
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+      }
+
+      &:first-child {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
