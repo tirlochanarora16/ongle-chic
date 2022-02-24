@@ -15,7 +15,7 @@ const Navigation = () => {
           <Link href="/institute">Plan d’Institut</Link>
         </div>
         <div className={style["navigation__item"]}>
-          <Link href="#">Mentions légales</Link>
+          <Link href="/legal">Mentions légales</Link>
         </div>
       </ul>
     </nav>
