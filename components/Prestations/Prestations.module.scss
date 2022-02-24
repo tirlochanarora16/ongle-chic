@@ -1,0 +1,68 @@
+// Prestations
+.prestations {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__menu {
+    position: absolute;
+    right: 0;
+    bottom: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+// Radio Input
+.radio {
+  &__container {
+    display: flex;
+
+    align-items: center;
+    padding: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__button {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background-color: transparent;
+    background-color: #fff;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background-color: var(--color-black);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    margin-left: 0.5rem;
+  }
+
+  input:checked ~ .radio__button::after {
+    opacity: 1;
+  }
+}

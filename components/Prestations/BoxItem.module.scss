@@ -1,0 +1,12 @@
+.box {
+  &__item {
+    padding: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    p:last-child {
+      margin-left: 2rem;
+    }
+  }
+}
