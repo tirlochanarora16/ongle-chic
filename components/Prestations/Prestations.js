@@ -1,10 +1,12 @@
 import { useState } from "react";
+
 import Contact from "../Contact/Contact";
 import Poses from "./Poses/Poses";
 import Pieds from "./Pieds/Pieds";
 import Mirror from "./Mirror/Mirror";
 import Soins from "./Soins/Soins";
 import Cosmetic from "./Cosmetic/Cosmetic";
+import Gel from "./Gel/Gel";
 
 import posesImg from "../../images/prestation/4.png";
 import manicureImg from "../../images/prestation/1.png";
@@ -63,6 +65,7 @@ const Prestations = () => {
         {currentPrestation === "manicure" && <Mirror />}
         {currentPrestation === "soins" && <Soins />}
         {currentPrestation === "cosmetic" && <Cosmetic />}
+        {currentPrestation === "gel" && <Gel />}
       </div>
       <div className={style["prestations__contact"]}>
         <Contact />

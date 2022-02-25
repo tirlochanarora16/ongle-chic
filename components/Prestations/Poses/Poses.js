@@ -1,3 +1,5 @@
+import Container from "../../UI/Container";
+import Heading from "../../UI/Heading";
 import BoxItem from "../BoxItem";
 import style from "./Poses.module.scss";
 
@@ -22,8 +24,8 @@ const PosesBox = (props) => {
 
 const Poses = () => {
   return (
-    <div className={style.poses}>
-      <h1 className={style["poses__title"]}>Semi Permanent</h1>
+    <Container>
+      <Heading>Semi Permanent</Heading>
       <div className={style["poses__content"]}>
         <PosesBox
           title="mains"
@@ -56,7 +58,7 @@ const Poses = () => {
           ]}
         />
       </div>
-    </div>
+    </Container>
   );
 };
 

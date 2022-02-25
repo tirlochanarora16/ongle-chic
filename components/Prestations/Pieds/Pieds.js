@@ -1,4 +1,5 @@
-import BoxItem from "../BoxItem";
+import Container from "../../UI/Container";
+import Heading from "../../UI/Heading";
 import style from "./Pieds.module.scss";
 
 const Pieds = () => {
@@ -20,8 +21,8 @@ const Pieds = () => {
   ];
 
   return (
-    <div className={style.pieds}>
-      <h1>La beauté des pieds</h1>
+    <Container>
+      <Heading>La beauté des pieds</Heading>
       <div className={style["pieds__items"]}>
         {items.map((item, index) => (
           <div className={style["pieds__item"]}>
@@ -30,7 +31,7 @@ const Pieds = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

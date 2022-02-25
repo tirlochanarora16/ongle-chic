@@ -1,0 +1,8 @@
+.gel {
+  &__content {
+    margin-top: 2rem;
+    & > div {
+      justify-content: center;
+    }
+  }
+}
