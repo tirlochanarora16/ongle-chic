@@ -25,7 +25,7 @@ const Pieds = () => {
       <Heading>La beauté des pieds</Heading>
       <div className={style["pieds__items"]}>
         {items.map((item, index) => (
-          <div className={style["pieds__item"]}>
+          <div className={style["pieds__item"]} key={item + index}>
             <p>{item.title}</p>
             <p>{item.amount}&euro;</p>
           </div>
