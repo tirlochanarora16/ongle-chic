@@ -28,12 +28,12 @@ const Legal = () => {
         <div className={style["legal__content-2"]}>
           <p>
             Vous êtes actuellement connecté au site
-            http://www.ongle-chic-paris.com qui est la propriété de l'entreprise
-            ONGLE CHIC. De facto, vous acceptez de vous conformer aux lois
-            françaises sur les données nominatives, sur la propriété
-            intellectuelle, les droits d'auteurs, la presse et la communication,
-            ainsi qu'aux traités et accords internationaux relatifs à ces
-            domaines.
+            http://www.ongle-chic-paris.com qui est la propriété de
+            l&apos;entreprise ONGLE CHIC. De facto, vous acceptez de vous
+            conformer aux lois françaises sur les données nominatives, sur la
+            propriété intellectuelle, les droits d&apos;auteurs, la presse et la
+            communication, ainsi qu&apos;aux traités et accords internationaux
+            relatifs à ces domaines.
           </p>
         </div>
         <div className={style["legal__content-3"]}>

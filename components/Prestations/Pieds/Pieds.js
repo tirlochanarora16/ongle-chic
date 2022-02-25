@@ -11,7 +11,7 @@ const Pieds = () => {
     },
     {
       title:
-        "Supplément laque couleurs ou french lors d'un soin(durée environ 5 a 6 semaines)",
+        "Supplément laque couleurs ou french lors d&apos;un soin(durée environ 5 a 6 semaines)",
       amount: 20,
     },
     {

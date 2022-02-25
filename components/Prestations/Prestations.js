@@ -3,7 +3,6 @@ import { useState } from "react";
 import Contact from "../Contact/Contact";
 import Poses from "./Poses/Poses";
 import Pieds from "./Pieds/Pieds";
-import Mirror from "./Mirror/Mirror";
 import Soins from "./Soins/Soins";
 import Cosmetic from "./Cosmetic/Cosmetic";
 import Gel from "./Gel/Gel";
