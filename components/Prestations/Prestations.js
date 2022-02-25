@@ -7,12 +7,15 @@ import Mirror from "./Mirror/Mirror";
 import Soins from "./Soins/Soins";
 import Cosmetic from "./Cosmetic/Cosmetic";
 import Gel from "./Gel/Gel";
+import Resine from "./Resine/Resine";
+import Manicure from "./Manicure/Manicure";
 
 import posesImg from "../../images/prestation/4.png";
-import manicureImg from "../../images/prestation/1.png";
+import manicureImg from "../../images/prestation/7.png";
 import gelImg from "../../images/prestation/5.png";
 import piedsImg from "../../images/prestation/8.png";
 import soinsImg from "../../images/prestation/9.png";
+import resineImg from "../../images/prestation/3.png";
 
 import style from "./Prestations.module.scss";
 
@@ -50,6 +53,8 @@ const Prestations = () => {
       ? piedsImg.src
       : currentPrestation === "soins"
       ? soinsImg.src
+      : currentPrestation === "resine"
+      ? resineImg.src
       : null;
 
   return (
@@ -62,10 +67,11 @@ const Prestations = () => {
       <div className={style["prestations__content"]}>
         {currentPrestation === "poses" && <Poses />}
         {currentPrestation === "pieds" && <Pieds />}
-        {currentPrestation === "manicure" && <Mirror />}
+        {currentPrestation === "manicure" && <Manicure />}
         {currentPrestation === "soins" && <Soins />}
         {currentPrestation === "cosmetic" && <Cosmetic />}
         {currentPrestation === "gel" && <Gel />}
+        {currentPrestation === "resine" && <Resine />}
       </div>
       <div className={style["prestations__contact"]}>
         <Contact />

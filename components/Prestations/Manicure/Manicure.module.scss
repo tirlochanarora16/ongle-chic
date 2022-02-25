@@ -1,0 +1,25 @@
+.manicure {
+  &__img {
+    position: relative;
+    top: 2rem;
+    left: 8rem;
+  }
+
+  &__items {
+    display: flex;
+    width: 90%;
+    margin: 5rem auto;
+
+    & > div {
+      flex: 1;
+
+      & > div {
+        align-items: center;
+
+        p {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
