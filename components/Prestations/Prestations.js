@@ -3,11 +3,14 @@ import Contact from "../Contact/Contact";
 import Poses from "./Poses/Poses";
 import Pieds from "./Pieds/Pieds";
 import Mirror from "./Mirror/Mirror";
+import Soins from "./Soins/Soins";
+import Cosmetic from "./Cosmetic/Cosmetic";
 
 import posesImg from "../../images/prestation/4.png";
 import manicureImg from "../../images/prestation/1.png";
 import gelImg from "../../images/prestation/5.png";
 import piedsImg from "../../images/prestation/8.png";
+import soinsImg from "../../images/prestation/9.png";
 
 import style from "./Prestations.module.scss";
 
@@ -43,6 +46,8 @@ const Prestations = () => {
       ? gelImg.src
       : currentPrestation === "pieds"
       ? piedsImg.src
+      : currentPrestation === "soins"
+      ? soinsImg.src
       : null;
 
   return (
@@ -56,6 +61,8 @@ const Prestations = () => {
         {currentPrestation === "poses" && <Poses />}
         {currentPrestation === "pieds" && <Pieds />}
         {currentPrestation === "manicure" && <Mirror />}
+        {currentPrestation === "soins" && <Soins />}
+        {currentPrestation === "cosmetic" && <Cosmetic />}
       </div>
       <div className={style["prestations__contact"]}>
         <Contact />
@@ -68,7 +75,7 @@ const Prestations = () => {
           <RadioInput id="resine" name="La résine H/F" />
           <RadioInput id="pieds" name="La beauté des pieds" />
           <RadioInput id="soins" name="Soins des cils" />
-          <RadioInput id="cosmetique" name="Cosmétique et accessoires" />
+          <RadioInput id="cosmetic" name="Cosmétique et accessoires" />
         </form>
       </div>
     </section>
