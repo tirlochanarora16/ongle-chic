@@ -49,7 +49,6 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    display: none;
 
     @include respond(phone) {
       flex-direction: column;
@@ -59,8 +58,13 @@
   }
 
   &__item {
+    display: inline-block;
     font-size: 1.75rem;
     padding: 1rem;
+
+    @include respond(phone) {
+      display: block;
+    }
 
     a {
       &:link,

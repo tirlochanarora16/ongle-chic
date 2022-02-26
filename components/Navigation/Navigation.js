@@ -3,7 +3,7 @@ import { useState } from "react";
 import style from "./Navigation.module.scss";
 
 const Navigation = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(true);
 
   const handleMobileMenuHandler = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -22,7 +22,7 @@ const Navigation = () => {
         </div>
         <div
           className={style["navigation__items"]}
-          style={{ display: showMobileMenu ? "block" : "none" }}
+          style={{ display: showMobileMenu ? "flex" : "none" }}
         >
           <div className={style["navigation__item"]}>
             <Link href="/">Accueil</Link>
