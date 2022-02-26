@@ -1,15 +1,61 @@
+@import "../../styles/responsive.scss";
+
 .navigation {
+  &__mobile {
+    display: none;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      background-color: #000;
+      width: 100%;
+      height: 4rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    &-nav {
+      display: none;
+      @include respond(phone) {
+        display: block;
+        height: 0.25rem;
+        border-radius: 6rem;
+        width: 10%;
+        background-color: #fff;
+        position: relative;
+      }
+    }
+  }
   &__container {
     width: 60%;
     margin: auto;
-
-    display: flex;
-    justify-content: space-between;
 
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+
+    @include respond(phone) {
+      flex-direction: column;
+      box-shadow: var(--box-shadow);
+      background-color: var(--color-primary);
+    }
   }
 
   &__item {
@@ -27,6 +73,10 @@
 
       &:hover {
         color: var(--color-primary);
+
+        @include respond(phone) {
+          color: #666;
+        }
       }
     }
   }

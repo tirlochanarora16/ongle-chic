@@ -13,14 +13,16 @@ const Header = () => {
       <div className={style["header__container"]}>
         <div className={style["header__box"]}>
           <h1>Ils parlent de nous</h1>
-          <div className={style["header__box--video"]}>
-            <p>
-              Voir <br /> vidéo
-            </p>
-            <Image src={tf1} alt="tf1" width={80} height={50} />
-          </div>
-          <div className={style["header__box--elle"]}>
-            <Image src={elle} alt="elle" width={100} height={40} />
+          <div className={style["header__boxes"]}>
+            <div className={style["header__box--video"]}>
+              <p>
+                Voir <br /> vidéo
+              </p>
+              <Image src={tf1} alt="tf1" width={80} height={50} />
+            </div>
+            <div className={style["header__box--elle"]}>
+              <Image src={elle} alt="elle" width={100} height={40} />
+            </div>
           </div>
         </div>
         <div className={style["header__title"]}>

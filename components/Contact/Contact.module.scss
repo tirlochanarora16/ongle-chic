@@ -1,7 +1,13 @@
+@import "../../styles/responsive.scss";
+
 .contact {
   padding: 2rem;
   position: absolute;
   right: 5rem;
+
+  @include respond(phone) {
+    display: none;
+  }
 
   &__number {
     font-size: 2rem;

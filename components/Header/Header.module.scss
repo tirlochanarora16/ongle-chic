@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .header {
   height: 100vh;
   background-size: contain;
@@ -11,11 +13,22 @@
     left: 5rem;
     top: 2rem;
 
+    @include respond(phone) {
+      width: 100%;
+      left: 0;
+      top: 5rem;
+    }
+
     h1 {
       font-family: var(--font-secondary);
       font-size: 3rem;
       text-align: center;
       font-weight: bold;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+        color: var(--color-black);
+      }
     }
 
     &--video {
@@ -28,6 +41,12 @@
       border-radius: 6rem;
       box-shadow: var(--box-shadow);
       cursor: pointer;
+
+      @include respond(phone) {
+        width: 50%;
+        margin: 2rem auto;
+        background-color: #fff;
+      }
 
       p {
         text-align: center;
@@ -44,6 +63,25 @@
       border-radius: 6rem;
       box-shadow: var(--box-shadow);
       cursor: pointer;
+
+      @include respond(phone) {
+        width: 50%;
+        margin: auto;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__boxes {
+    @include respond(phone) {
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    & > div {
+      @include respond(phone) {
+        margin: 1rem;
+      }
     }
   }
 
@@ -55,6 +93,12 @@
     left: 55%;
     transform: translate(-50%, -50%);
 
+    @include respond(phone) {
+      width: 90%;
+      top: 40%;
+      left: 50%;
+    }
+
     &--container {
       position: relative;
     }
@@ -63,7 +107,9 @@
       font-family: var(--font-secondary);
       font-weight: 500;
       font-size: 8rem;
-      // letter-spacing: 1rem;
+      @include respond(phone) {
+        text-align: center;
+      }
     }
 
     h3 {
@@ -73,6 +119,10 @@
       bottom: 0;
       font-weight: 500;
       right: 0;
+
+      @include respond(phone) {
+        right: 1rem;
+      }
     }
   }
 }
