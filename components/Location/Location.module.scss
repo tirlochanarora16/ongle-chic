@@ -1,0 +1,38 @@
+.location {
+  &__address {
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    top: 14rem;
+    left: -25rem;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    & div {
+      text-align: center;
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &__img {
+    width: fit-content;
+    position: relative;
+    top: 16rem;
+    left: 25rem;
+    border-radius: 6rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    display: block;
+
+    &-2 {
+      position: absolute;
+      bottom: 25rem;
+      right: 5rem;
+    }
+  }
+}
