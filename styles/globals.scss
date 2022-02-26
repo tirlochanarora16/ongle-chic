@@ -18,10 +18,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
 }
 
 html {
   font-size: 62.5%;
   overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
