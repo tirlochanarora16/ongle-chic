@@ -12,6 +12,10 @@
     & > *:last-child {
       margin-top: 8rem;
 
+      @include respond(phone) {
+        margin-top: 5rem;
+      }
+
       @include respond(small-phone) {
         margin-top: 1rem;
       }
