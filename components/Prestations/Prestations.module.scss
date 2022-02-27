@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 // Prestations
 .prestations {
   background-repeat: no-repeat;
@@ -13,6 +15,19 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+
+    @include respond(phone) {
+      padding: 0;
+      width: 100%;
+      bottom: 0;
+      left: 1rem;
+    }
+  }
+
+  &__contact {
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -26,6 +41,12 @@
 
     font-size: 1.2rem;
     font-weight: bold;
+
+    @include respond(phone) {
+      padding: 0.5rem;
+      position: relative;
+      z-index: 100;
+    }
   }
 
   &__button {
@@ -60,6 +81,10 @@
 
   label {
     margin-left: 0.5rem;
+
+    @include respond(small-phone) {
+      font-size: 1rem;
+    }
   }
 
   input:checked ~ .radio__button::after {
