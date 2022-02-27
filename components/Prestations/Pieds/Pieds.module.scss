@@ -15,7 +15,6 @@
 
     @include respond(phone) {
       width: 100%;
-      border: 1px solid red;
     }
 
     & > p:first-child {
