@@ -6,7 +6,8 @@
   right: 5rem;
 
   @include respond(phone) {
-    display: none;
+    bottom: 0;
+    right: 0;
   }
 
   &__number {

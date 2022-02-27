@@ -32,7 +32,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Contact />
+      <div className={style["header__contact"]}>
+        <Contact />
+      </div>
     </header>
   );
 };

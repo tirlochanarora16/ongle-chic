@@ -1,5 +1,7 @@
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+import Contact from "../Contact/Contact";
+
 import style from "./Navigation.module.scss";
 
 const Navigation = () => {
