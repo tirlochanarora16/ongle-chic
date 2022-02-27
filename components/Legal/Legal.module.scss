@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .legal {
   &__content {
     width: 60%;
@@ -13,6 +15,15 @@
     font-size: 1.25rem;
     font-weight: 500;
 
+    @include respond(phone) {
+      top: 50%;
+      width: 90%;
+    }
+
+    @include respond(small-phone) {
+      top: 57%;
+    }
+
     & > div {
       padding: 1rem;
     }
@@ -21,6 +32,23 @@
       & p:last-child {
         margin: 1rem 0;
       }
+    }
+  }
+
+  &__contact {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  & p {
+    @include respond(phone) {
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+    @include respond(small-phone) {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
     }
   }
 }
