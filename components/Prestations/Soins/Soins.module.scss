@@ -1,10 +1,36 @@
+@import "../../../styles/responsive.scss";
+
 .soins {
+  &__heading > h1 {
+    text-align: right;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+
   &__items {
     margin-top: 3rem;
 
     & > div {
+      @include respond(phone) {
+        text-align: center;
+      }
+
+      p {
+        @include respond(phone) {
+          flex: 1;
+        }
+      }
+    }
+
+    & > div {
       font-weight: 500;
       justify-content: flex-end;
+
+      @include respond(phone) {
+        justify-content: center;
+      }
     }
   }
 }

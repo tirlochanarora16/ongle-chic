@@ -6,7 +6,9 @@ import style from "./Soins.module.scss";
 const Soins = () => {
   return (
     <Container>
-      <Heading style={{ textAlign: "right" }}>Soins des cils</Heading>
+      <div className={style["soins__heading"]}>
+        <Heading>Soins des cils</Heading>
+      </div>
       <div className={style["soins__items"]}>
         <BoxItem title="Réhaussement de cils" amount={57} />
         <BoxItem title="Teinture de cils" amount={27} />

@@ -1,8 +1,14 @@
+@import "../../../styles/responsive.scss";
+
 .manicure {
   &__img {
     position: relative;
     top: 2rem;
     left: 8rem;
+
+    @include respond(phone) {
+      left: 1rem;
+    }
   }
 
   &__items {
@@ -10,14 +16,43 @@
     width: 90%;
     margin: 5rem auto;
 
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
     & > div {
       flex: 1;
 
+      &:first-child {
+        @include respond(phone) {
+          margin-bottom: 2rem;
+        }
+      }
+
       & > div {
+        justify-content: space-between;
         align-items: center;
 
+        &:not(:last-child) {
+          @include respond(phone) {
+            margin-bottom: 2rem;
+          }
+        }
+
+        @include respond(phone) {
+          padding: 0.5rem;
+        }
+
         p {
-          flex: 1;
+          @include respond(phone) {
+            font-size: 1.25rem;
+          }
+          &:first-child {
+            margin-right: 1rem;
+            flex: 1;
+          }
         }
       }
     }
