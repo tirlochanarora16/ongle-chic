@@ -10,9 +10,8 @@
     left: -25rem;
 
     @include respond(phone) {
-      top: 16rem;
+      top: 12rem;
       left: 0;
-      border: 1px solid red;
     }
 
     p {
@@ -38,7 +37,9 @@
     display: block;
 
     @include respond(phone) {
-      top: 20rem;
+      width: 75%;
+      margin: auto;
+      top: 13rem;
       left: 0.75rem;
     }
 
