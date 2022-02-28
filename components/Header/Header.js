@@ -25,7 +25,13 @@ const Header = () => {
       )}
       {showVideo && (
         <div className={style["header__video"]}>
-          <video width="400" height="300" src={"./video.mp4"} controls={true} />
+          <video
+            width="400"
+            height="300"
+            src={"./video.mp4"}
+            controls={true}
+            autoPlay
+          />
         </div>
       )}
       <div className={style["header__container"]}>
