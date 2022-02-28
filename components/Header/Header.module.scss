@@ -125,6 +125,12 @@
     left: 55%;
     transform: translate(-50%, -50%);
 
+    @include respond(tab-port) {
+      width: 50%;
+      top: 43%;
+      left: 60%;
+    }
+
     @include respond(phone) {
       width: 90%;
       top: 45%;
@@ -139,6 +145,11 @@
       font-family: var(--font-secondary);
       font-weight: 500;
       font-size: 8rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
+
       @include respond(phone) {
         font-size: 5.25rem;
         text-align: center;
@@ -152,6 +163,10 @@
       bottom: 0;
       font-weight: 500;
       right: 0;
+
+      @include respond(tab-port) {
+        right: 4rem;
+      }
 
       @include respond(phone) {
         right: 8rem;

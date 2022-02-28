@@ -8,6 +8,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @include respond(tab-port) {
+    width: 80%;
+  }
+
   @include respond(phone) {
     width: 100%;
     top: 11%;
@@ -18,6 +22,10 @@
 
     padding: 1rem;
 
+    @include respond(tab-port) {
+      padding: 0;
+    }
+
     @include respond(phone) {
       padding: 0;
     }
@@ -27,6 +35,11 @@
       font-family: var(--font-secondary);
       font-weight: 500;
       letter-spacing: 0.5rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+        font-size: 8rem;
+      }
 
       @include respond(phone) {
         font-size: 4rem;
@@ -42,6 +55,11 @@
       text-transform: uppercase;
       font-size: 1.75rem;
       font-weight: 500;
+
+      @include respond(tab-port) {
+        font-size: 2.25rem;
+        right: 15rem;
+      }
 
       @include respond(phone) {
         bottom: -0.5rem;

@@ -5,6 +5,10 @@
   position: absolute;
   right: 5rem;
 
+  @include respond(tab-port) {
+    right: 0;
+  }
+
   @include respond(phone) {
     bottom: 0;
     right: 0;
@@ -15,6 +19,10 @@
     font-family: var(--font-secondary);
     font-weight: bold;
     text-align: center;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
 
   &__button {
@@ -27,5 +35,9 @@
     box-shadow: var(--box-shadow);
     cursor: pointer;
     background-color: #fff;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
   }
 }
