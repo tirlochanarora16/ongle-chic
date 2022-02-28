@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Image from "next/image";
+import { ImCross } from "react-icons/im";
 
 import Contact from "../Contact/Contact";
 
@@ -8,13 +10,32 @@ import tf1 from "../../images/header/tf1.png";
 import elle from "../../images/header/elle.png";
 
 const Header = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const toggleVideoHandler = () => setShowVideo(!showVideo);
+
   return (
     <header className={style.header}>
+      {showVideo && (
+        <div className={style["header__backdrop"]} onClick={toggleVideoHandler}>
+          <div className={style["header__backdrop--icon"]}>
+            <ImCross />
+          </div>
+        </div>
+      )}
+      {showVideo && (
+        <div className={style["header__video"]}>
+          <video width="400" height="300" src={"./video.mp4"} controls={true} />
+        </div>
+      )}
       <div className={style["header__container"]}>
         <div className={style["header__box"]}>
           <h1>Ils parlent de nous</h1>
           <div className={style["header__boxes"]}>
-            <div className={style["header__box--video"]}>
+            <div
+              className={style["header__box--video"]}
+              onClick={toggleVideoHandler}
+            >
               <p>
                 Voir <br /> vidéo
               </p>
