@@ -76,8 +76,6 @@
 
       @include respond(phone) {
         width: 50%;
-        position: relative;
-        z-index: 1;
         margin: 2rem auto;
         background-color: #fff;
       }

@@ -24,7 +24,9 @@ const Navigation = () => {
         </div>
         <div
           className={style["navigation__items"]}
-          style={{ display: showMobileMenu ? "flex" : "none" }}
+          style={{
+            display: showMobileMenu ? "flex" : "none",
+          }}
         >
           <div className={style["navigation__item"]}>
             <Link href="/">Accueil</Link>
