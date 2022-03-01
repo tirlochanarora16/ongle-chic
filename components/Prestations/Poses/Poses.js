@@ -6,8 +6,7 @@ import style from "./Poses.module.scss";
 const PosesBox = (props) => {
   return (
     <div className={style["poses__box"]}>
-      <h2>Vernis Semi Permanent - Soins des {props.title}</h2>
-      <h3>Choix de couleur possible</h3>
+      <h2>Semi Permanent</h2>
       <div className={style["poses__items"]}>
         {props.items.map((item, index) => (
           <BoxItem
@@ -25,13 +24,12 @@ const PosesBox = (props) => {
 const Poses = () => {
   return (
     <Container>
-      <Heading>Semi Permanent</Heading>
       <div className={style["poses__content"]}>
         <PosesBox
           title="mains"
           items={[
             {
-              title: "Lime, verni semi permanent",
+              title: "Lime + verni semi permanent",
               amount: 36,
             },
             {

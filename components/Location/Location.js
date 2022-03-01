@@ -37,8 +37,8 @@ const Location = () => {
             <p>Métro : station Convention, ligne 12, 8.</p>
             <p>Bus : lignes 39,58,62,80,89 et 95.</p>
             <p>
-              Tramway : station Porte de Versailles et Georges Brassens. Lignes
-              T2 et T3.{" "}
+              Tramway : station Porte de Versailles et Georges Brassens. Ligne
+              T3
             </p>
           </div>
         </div>
