@@ -13,6 +13,10 @@
     width: 50%;
     margin: auto;
 
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
     @include respond(phone) {
       width: 100%;
     }
@@ -20,6 +24,10 @@
     & > p:first-child {
       flex: 1;
       text-align: right;
+
+      @include respond(tab-land) {
+        text-align: center;
+      }
 
       @include respond(phone) {
         text-align: center;

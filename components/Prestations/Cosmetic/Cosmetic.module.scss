@@ -37,6 +37,11 @@
       flex: 1;
       margin-left: 10rem;
 
+      @include respond(tab-land) {
+        // border: 1px solid red;
+        margin-top: 10rem;
+      }
+
       @include respond(phone) {
         display: none;
       }
@@ -45,6 +50,18 @@
     &-2 {
       position: relative;
       top: -4rem;
+
+      & > img {
+        display: block;
+        margin: auto;
+      }
+
+      @include respond(tab-land) {
+        top: -2rem;
+        margin-top: auto;
+        margin-right: 2rem;
+        // border: 1px solid red;
+      }
 
       @include respond(phone) {
         top: 2rem;

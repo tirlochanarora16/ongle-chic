@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import Container from "../../UI/Container";
@@ -8,6 +9,15 @@ import items from "../../../images/prestation/6.png";
 import style from "./Cosmetic.module.scss";
 
 const Cosmetic = () => {
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+    }
+  }, []);
+
+  // console.log(width);
+
   return (
     <Container>
       <div className={style["cosmetic__title"]}>
@@ -19,7 +29,12 @@ const Cosmetic = () => {
           <Image src={nailpolish} alt="nailpolish" width={200} height={400} />
         </div>
         <div className={style["cosmetic__content-2"]}>
-          <Image src={items} alt="nailpolish" width={450} height={450} />
+          <Image
+            src={items}
+            alt="nailpolish"
+            width={width < 1100 ? 400 : 450}
+            height={width < 1100 ? 400 : 450}
+          />
         </div>
       </div>
     </Container>
