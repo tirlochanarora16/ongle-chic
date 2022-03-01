@@ -4,6 +4,10 @@
   &__heading > h1 {
     text-align: right;
 
+    @include respond(tab-port) {
+      margin-right: 2rem;
+    }
+
     @include respond(phone) {
       text-align: center;
     }
@@ -13,6 +17,10 @@
     margin-top: 3rem;
 
     & > div {
+      @include respond(tab-port) {
+        margin-right: 2rem;
+      }
+
       @include respond(phone) {
         text-align: center;
       }

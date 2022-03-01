@@ -29,14 +29,12 @@ const Cosmetic = () => {
           )}
         </div>
         <div className={style["cosmetic__content-2"]}>
-          {width > 1200 && (
-            <Image
-              src={items}
-              alt="nailpolish"
-              width={width < 1100 ? 400 : 450}
-              height={width < 1100 ? 400 : 450}
-            />
-          )}
+          <Image
+            src={items}
+            alt="nailpolish"
+            width={width < 1100 ? 400 : 450}
+            height={width < 1100 ? 400 : 450}
+          />
         </div>
       </div>
     </Container>
