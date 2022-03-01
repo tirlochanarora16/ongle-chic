@@ -16,8 +16,6 @@ const Cosmetic = () => {
     }
   }, []);
 
-  // console.log(width);
-
   return (
     <Container>
       <div className={style["cosmetic__title"]}>
@@ -31,12 +29,14 @@ const Cosmetic = () => {
           )}
         </div>
         <div className={style["cosmetic__content-2"]}>
-          <Image
-            src={items}
-            alt="nailpolish"
-            width={width < 1100 ? 400 : 450}
-            height={width < 1100 ? 400 : 450}
-          />
+          {width > 1200 && (
+            <Image
+              src={items}
+              alt="nailpolish"
+              width={width < 1100 ? 400 : 450}
+              height={width < 1100 ? 400 : 450}
+            />
+          )}
         </div>
       </div>
     </Container>
