@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Title from "../Title/Title";
 import Contact from "../Contact/Contact";
@@ -7,6 +8,14 @@ import location from "../../images/location/location.png";
 import img2 from "../../images/location/1.png";
 
 const Location = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+    }
+  }, []);
+
   return (
     <section className={style.location}>
       <div className={style["location__title"]}>
@@ -34,11 +43,15 @@ const Location = () => {
           </div>
         </div>
         <div className={style["location__img"]}>
-          <Image src={location} width={400} height={300} alt="map location" />
+          {width !== 768 && (
+            <Image src={location} width={400} height={300} alt="map location" />
+          )}
         </div>
-        <div className={style["location__img-2"]}>
-          <Image src={img2} alt="img2" width={400} height={300} />
-        </div>
+        {width !== 768 && (
+          <div className={style["location__img-2"]}>
+            <Image src={img2} alt="img2" width={400} height={300} />
+          </div>
+        )}
       </div>
     </section>
   );
