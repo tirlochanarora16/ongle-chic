@@ -5,6 +5,10 @@
   position: absolute;
   right: 5rem;
 
+  @include respond(tab-land) {
+    right: 0;
+  }
+
   @include respond(tab-port) {
     right: 0;
   }
