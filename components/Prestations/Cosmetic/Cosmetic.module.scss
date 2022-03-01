@@ -38,8 +38,13 @@
       margin-left: 10rem;
 
       @include respond(tab-land) {
-        // border: 1px solid red;
+        height: 30rem;
+        overflow: hidden;
         margin-top: 10rem;
+        background-image: url("../../../images/prestation/2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       @include respond(phone) {
@@ -51,16 +56,15 @@
       position: relative;
       top: -4rem;
 
-      & > img {
-        display: block;
-        margin: auto;
-      }
-
       @include respond(tab-land) {
-        top: -2rem;
-        margin-top: auto;
+        height: 30rem;
+        overflow: hidden;
+        margin-top: 5rem;
         margin-right: 2rem;
-        // border: 1px solid red;
+        background-image: url("../../../images/prestation/6.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       @include respond(phone) {

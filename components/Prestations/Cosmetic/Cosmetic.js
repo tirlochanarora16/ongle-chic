@@ -26,7 +26,9 @@ const Cosmetic = () => {
       </div>
       <div className={style["cosmetic__content"]}>
         <div className={style["cosmetic__content-1"]}>
-          <Image src={nailpolish} alt="nailpolish" width={200} height={400} />
+          {width > 1200 && (
+            <Image src={nailpolish} alt="nailpolish" width={200} height={400} />
+          )}
         </div>
         <div className={style["cosmetic__content-2"]}>
           <Image
