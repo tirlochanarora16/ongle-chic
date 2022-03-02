@@ -76,6 +76,11 @@
       top: 50rem;
     }
 
+    @include respond(small-phone) {
+      height: 20rem;
+      top: 40rem;
+    }
+
     &-2 {
       position: absolute;
       bottom: 25rem;
