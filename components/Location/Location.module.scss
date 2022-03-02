@@ -20,9 +20,8 @@
       transform: translate(-50%, -50%);
     }
 
-    @include respond(phone) {
-      top: 12rem;
-      left: 0;
+    @include respond(small-phone) {
+      margin-top: 4rem;
     }
 
     & p {
@@ -74,8 +73,7 @@
     @include respond(phone) {
       width: 75%;
       margin: auto;
-      top: 13rem;
-      left: 0.75rem;
+      top: 50rem;
     }
 
     &-2 {
@@ -88,6 +86,10 @@
         left: 85%;
         transform: translate(-50%, -50%);
         width: 30rem;
+      }
+
+      @include respond(tab-port) {
+        display: none;
       }
 
       @include respond(phone) {
