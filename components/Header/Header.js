@@ -8,22 +8,38 @@ import style from "./Header.module.scss";
 
 import tf1 from "../../images/header/tf1.png";
 import elle from "../../images/header/elle.png";
+import elleMagzine from "../../images/header/magazine-elle.jpg";
 
 const Header = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setshowVideo] = useState(false);
+  const [showElle, setShowElle] = useState(false);
+  const [backdrop, setBackdrop] = useState(false);
 
-  const toggleVideoHandler = () => setShowVideo(!showVideo);
+  const toggleBackdrop = () => {
+    setBackdrop(false);
+    setshowVideo(false);
+    setShowElle(false);
+  };
+
+  const toggleVideoHandler = () => {
+    setBackdrop(true);
+    setshowVideo(true);
+  };
+  const toggleElleHandler = () => {
+    setBackdrop(true);
+    setShowElle(true);
+  };
 
   return (
     <header className={style.header}>
-      {showVideo && (
-        <div className={style["header__backdrop"]} onClick={toggleVideoHandler}>
+      {backdrop && (
+        <div className={style["header__backdrop"]} onClick={toggleBackdrop}>
           <div className={style["header__backdrop--icon"]}>
             <ImCross />
           </div>
         </div>
       )}
-      {showVideo && (
+      {backdrop && showVideo && (
         <div className={style["header__video"]}>
           <video
             width="400"
@@ -32,6 +48,11 @@ const Header = () => {
             controls={true}
             autoPlay
           />
+        </div>
+      )}
+      {backdrop && showElle && (
+        <div className={style["header__elle"]}>
+          <Image src={elleMagzine} />
         </div>
       )}
       <div className={style["header__container"]}>
@@ -47,7 +68,10 @@ const Header = () => {
               </p>
               <Image src={tf1} alt="tf1" width={80} height={50} />
             </div>
-            <div className={style["header__box--elle"]}>
+            <div
+              className={style["header__box--elle"]}
+              onClick={toggleElleHandler}
+            >
               <Image src={elle} alt="elle" width={100} height={40} />
             </div>
           </div>
