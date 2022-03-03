@@ -27,6 +27,7 @@
 
       p {
         @include respond(phone) {
+          margin: auto;
           flex: 1;
         }
       }
