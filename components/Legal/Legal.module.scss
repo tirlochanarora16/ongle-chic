@@ -50,6 +50,10 @@
   }
 
   & p {
+    @include respond(big-desktop) {
+      font-size: 2rem;
+    }
+
     @include respond(tab-port) {
       font-size: 1.6rem;
       line-height: 2.5rem;

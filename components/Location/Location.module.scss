@@ -9,6 +9,10 @@
     top: 14rem;
     left: -25rem;
 
+    @include respond(big-desktop) {
+      top: 20rem;
+    }
+
     @include respond(tab-land) {
       left: -15rem;
     }
@@ -50,6 +54,11 @@
     box-shadow: var(--box-shadow);
     display: block;
 
+    @include respond(big-desktop) {
+      top: 25rem;
+      left: 52rem;
+    }
+
     @include respond(tab-land) {
       top: 18rem;
       width: 30rem;
@@ -85,6 +94,10 @@
       position: absolute;
       bottom: 25rem;
       right: 5rem;
+
+      @include respond(big-desktop) {
+        top: 25rem;
+      }
 
       @include respond(tab-land) {
         top: 40%;

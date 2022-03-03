@@ -141,6 +141,10 @@
     left: 55%;
     transform: translate(-50%, -50%);
 
+    @include respond(big-desktop) {
+      left: 60%;
+    }
+
     @include respond(tab-port) {
       width: 50%;
       top: 43%;
@@ -162,6 +166,10 @@
       font-weight: 500;
       font-size: 8rem;
 
+      @include respond(big-desktop) {
+        font-size: 12rem;
+      }
+
       @include respond(tab-port) {
         text-align: center;
       }
@@ -179,6 +187,10 @@
       bottom: 0;
       font-weight: 500;
       right: 0;
+
+      @include respond(big-desktop) {
+        font-size: 3rem;
+      }
 
       @include respond(tab-port) {
         right: 4rem;

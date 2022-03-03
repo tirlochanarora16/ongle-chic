@@ -36,6 +36,10 @@
       font-weight: 500;
       letter-spacing: 0.5rem;
 
+      @include respond(big-desktop) {
+        font-size: 8rem;
+      }
+
       @include respond(tab-port) {
         text-align: center;
         font-size: 8rem;
@@ -55,6 +59,10 @@
       text-transform: uppercase;
       font-size: 1.75rem;
       font-weight: 500;
+
+      @include respond(big-desktop) {
+        font-size: 2.25rem;
+      }
 
       @include respond(tab-port) {
         font-size: 2.25rem;

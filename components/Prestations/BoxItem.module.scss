@@ -6,6 +6,10 @@
     display: flex;
     font-size: 1.5rem;
 
+    @include respond(big-desktop) {
+      font-size: 1.75rem;
+    }
+
     & > div {
       justify-content: flex-end;
     }
