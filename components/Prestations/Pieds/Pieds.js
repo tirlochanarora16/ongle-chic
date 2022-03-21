@@ -10,13 +10,8 @@ const Pieds = () => {
       amount: 49,
     },
     {
-      title:
-        "Supplément laque couleurs ou french lors d&apos;un soin(durée environ 5 a 6 semaines)",
+      title: "Vernis semis permanent ",
       amount: 20,
-    },
-    {
-      title: "Lime + Pose vernis classique",
-      amount: 15,
     },
   ];
 

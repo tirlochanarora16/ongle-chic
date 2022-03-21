@@ -73,9 +73,12 @@ const Prestations = () => {
         {currentPrestation === "resine" && <Resine />}
       </div>
       <div className={style["prestations__contact"]}>
-        <Contact />
+        <Contact changeColor={currentPrestation === "poses"} />
       </div>
-      <div className={style["prestations__menu"]}>
+      <div
+        className={style["prestations__menu"]}
+        style={{ color: currentPrestation === "poses" ? "#c2c2c2" : "" }}
+      >
         <form onChange={changeHandler}>
           <RadioInput id="poses" name="Poses de Semi Permanent" />
           <RadioInput id="manicure" name="La Manucure H/F" />

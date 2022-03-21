@@ -1,5 +1,5 @@
 import Container from "../../UI/Container";
-import Heading from "../../UI/Heading";
+
 import BoxItem from "../BoxItem";
 import style from "./Poses.module.scss";
 

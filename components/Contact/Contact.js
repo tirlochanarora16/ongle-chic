@@ -2,14 +2,17 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import style from "./Contact.module.scss";
 
-const Contact = () => {
+const Contact = (props) => {
   const router = useRouter();
 
   const contactUsHandler = () => router.push("/location");
 
   return (
     <div className={style.contact}>
-      <div className={style["contact__number"]}>
+      <div
+        className={style["contact__number"]}
+        style={{ color: props.changeColor ? "#c2c2c2" : "" }}
+      >
         <div className={style["contact__number-1"]}>
           <Link href="tel: +330683059701">06.83.05.97.01</Link>
         </div>
